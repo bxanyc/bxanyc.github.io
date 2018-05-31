@@ -1,0 +1,164 @@
+/************************** Header Navigation Styling ***************************/
+
+//color 90% of the page with code styling
+header {
+		margin: 0;
+		width: 100%;
+		height: 95vh;
+		background-color: $codeBGColor;
+		position: relative;
+	}
+
+//fix navigation to top of page
+nav {
+	font-family: 'Source Sans Pro', sans-serif;
+	position: fixed;
+	top: 0;
+	z-index: 9999; //always keep nav on top of content
+}
+
+div#logo-container {	
+    display: inline-block;
+    background-color: #ffffff;
+    height: 9.7rem;
+    width: 9.7rem;
+    margin-left: 3rem;
+    margin-top: 4rem;
+    border-radius: 50%;
+    transform-origin: left top;
+    transition: transform .5s, border-radius .5s .2s;
+}
+
+//logo positioning
+#logo {
+		// margin-left: 3rem;
+		// margin-top: 4rem;
+		// transition: transform .5s, background-color .3s;
+	}
+
+.shrinkLogo {
+	transform: translateY(-4rem) scale(.8,.8);
+	border-radius: 0% !important;
+	// border-left: .1rem solid $codeBGColor;
+	// border-right: .1rem solid $codeBGColor;
+	// border-bottom: .1rem solid $codeBGColor;
+}
+
+
+//container for navigation links
+//set bg color, width, height, font size
+//float div to right inside of nav element
+//center ul horizontally with flex/justify-content
+div#nav-links {
+	// background-color: #ffffff;
+	// width: 35.7rem;
+	// height: 7.8rem;
+	// float: right;
+	// margin-right: 3rem;
+	// text-align: center;
+	// font-size: 1.4rem;
+	background-color: #ffffff;
+	width: 35.7rem;
+	height: 7.8rem;
+	float: right;
+	margin-right: 3rem;
+	font-size: 1.4rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	@include tracking(100);
+	// border-left: .1rem solid $codeBGColor;
+	// border-right: .1rem solid $codeBGColor;
+	// border-bottom: .1rem solid $codeBGColor;
+	// z-index: 2;
+}
+
+//remove margin and padding from navigation list
+//remove list styling
+//make li items inline with display:flex
+//vertically center li items in #nav-links div with flex/align-items
+div#nav-links > ul {
+	margin: 0 .7rem;
+	padding: 0;
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+//remove styling on list items
+//absolute position list items to not push parent from flex positioning
+div#nav-links > ul > li#dropdown-parent > ul#dropdown-items {
+	list-style-type: none;
+	position:absolute;
+	padding: 0;
+	background-color: #fff;
+	width: 35.7rem;
+	right: 3rem;
+	height: 21.6rem;
+	top: 7.8rem;
+	font-size: 3rem;
+	font-weight: 600;
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	justify-content: space-around;
+	@include tracking(35);
+	visibility: hidden;
+	opacity: 0;
+	z-index:-1;
+	transform: translateY(-2rem);
+	transition: all .3s .3s; //delay the amount of time before hover out occurs
+}
+
+
+//mouse over portfolio behavior
+div#nav-links > ul > li#dropdown-parent:hover > ul#dropdown-items {
+	visibility: visible;
+	z-index:1;
+	opacity: 1;
+	transform: translateY(0%);
+	transition-delay: .1s;
+}
+
+//style dropdown item links
+div#nav-links > ul > li#dropdown-parent > ul#dropdown-items > li > a {
+	text-decoration: none;
+	color: $codeBGColor;
+	transition: color .2s;
+}
+
+div#nav-links > ul > li#dropdown-parent > ul#dropdown-items > li > a:hover { color: $mintLinkColor; }
+
+
+//push dropdown top item down
+div#nav-links > ul > li#dropdown-parent > ul#dropdown-items > li:first-child { margin-top: .5rem; }
+//push dropdown bottom item up
+div#nav-links > ul > li#dropdown-parent > ul#dropdown-items > li:last-child { margin-bottom: .5rem; }
+//push dropdown items to the right
+div#nav-links > ul > li#dropdown-parent > ul#dropdown-items > li { margin-left: 1.7rem; }
+
+//dropdown arrow for portfolio navigation item
+span.arrow-down {
+	// position: absolute;
+	// margin-top: .5rem;
+	margin-bottom: .3rem;
+	display: inline-block;
+	margin-left: .3rem;
+	border-left: .5rem solid transparent;
+  	border-right: .5rem solid transparent;
+  	border-top: .5rem solid $codeBGColor;
+  	transition: border-top .2s;
+}
+
+//set color and transition for main nav link items
+div#nav-links > ul > li > a {
+	text-decoration: none;
+	color: $codeBGColor;
+	transition: color .2s;
+}
+
+//transition color for main nav link hover
+div#nav-links > ul > li:hover > a  { color: $mintLinkColor; }
+//transition color for dropdown arrow
+div#nav-links > ul > li:hover > a > span.arrow-down{ border-top: .5rem solid $mintLinkColor; }

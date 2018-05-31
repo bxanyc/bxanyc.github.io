@@ -1,0 +1,128 @@
+/************************** Project Content Styling ***************************/
+
+@include for-size($ipadVertical) {
+	div.wrapper {
+		@include center($ipadVertical);
+	}
+}
+
+@include for-size($ipadHorizontal) {
+	div.wrapper {
+		@include center($ipadHorizontal);
+	}
+}
+
+div.wrapper {
+	// height:100rem;
+	// background-color: red;
+}
+
+//move later to base.scss
+//adjust spacing for all p.big-text elements that are a child of div.wrapper elements
+/* section#project-select > */ 
+div.wrapper > p.big-text {
+	display: inline-block;
+	margin-left: 2.6rem;
+}
+
+//targeting projects text
+section#project-select > div.wrapper > p.big-text {
+	// margin-bottom: 12.4rem;
+	padding: 0;
+	// margin-top: 6.9rem;
+	margin-top: 5vh;
+	color: $codeBGColor;
+}
+
+//container for the projects navigation section
+section#project-select > div.wrapper > div#projects-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0;
+	margin: 0 3rem;
+	margin-top: 10.8rem;
+} 
+
+//dividing line
+section#project-select > div.wrapper > div#projects-container > div#projects-text > div#projects-line-div {
+	height: .1rem;
+	width: 22.5rem;
+	background-color: $codeBGColor;
+	// margin: 0;
+	// margin-left: 3rem;
+	// margin-top: 10.8rem;
+}
+
+//project selection section text
+section#project-select > div.wrapper > div#projects-container > div#projects-text {
+	font-family: 'Source Sans Pro Regular', sans-serif;
+	font-size: 1.4rem;
+	line-height: 2.5rem;
+	@include tracking(100);
+	color: $codeBGColor;
+}
+
+//placeholder grey boxes for imgs
+div.placeholder1 {
+	width: 22.5rem;
+	height: 26rem;
+	background-color: grey;
+}
+
+//link text for project selection
+section#project-select > div.wrapper > div#projects-container p.projects-link {
+	font-family: 'Source Sans Pro Regular', sans-serif;
+	font-size: 1.4rem;
+	line-height: 2.4rem;
+	@include tracking(100);
+	color: #B3B3B3;
+}
+
+//link text styling
+section#project-select > div.wrapper > div#projects-container a {
+	text-decoration: none;
+}
+
+
+@include for-size($ipadVertical) {
+	//container for the projects navigation section
+	// section#project-select > div.wrapper > div#projects-container {
+	// 	display: flex;
+	// 	flex-direction: row;
+	// 	justify-content: space-between;
+	// 	flex-wrap: wrap;
+	// 	margin: 0;
+	// 	margin: 0 3rem;
+	// 	margin-top: 10.8rem;
+	// }
+	section#project-select > div.wrapper > div#projects-container {
+		// flex-wrap: nowrap;
+	} 
+
+	section#project-select > div.wrapper > div#projects-container > div#projects-text > div {
+		// color:red;
+		// background-color: blue;
+		// flex-wrap: nowrap;
+		// display: flex;
+		// flex-direction: row;
+		// margin-right: 10rem;
+	}
+
+	section#project-select > div.wrapper > div#projects-container > div#projects-text > div p:first-child {
+		// margin-right: 4.5rem;
+	}
+}
+
+@include for-size($ipadHorizontal) {
+	//container for the projects navigation section
+	// section#project-select > div.wrapper > div#projects-container {
+	// 	display: flex;
+	// 	flex-direction: row;
+	// flex-wrap: wrap;
+	// 	justify-content: space-between;
+	// 	margin: 0 3rem;
+	// 	margin-top: 10.8rem;
+	// }
+}

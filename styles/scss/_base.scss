@@ -1,0 +1,87 @@
+$ipadVertical: 768px; //portrait width for ipad dimensions
+$ipadHorizontal: 1024px; //landscape width for ipad dimensions
+$codeBGColor: #191D24; //code section background color
+$blueLinkColor: #18C6FE; //color of navigation links
+$mintLinkColor: #2ceda0; //accent color
+
+//font for large text
+@font-face { 
+	font-family: 'Montserrat-Semibold';
+	src: url("../../fonts/montserrat-semibold-webfont.woff");
+}
+
+//light font for body text
+@font-face { 
+	font-family: 'Source Sans Pro Light';
+	src: url("../../fonts/sourcesanspro-light-webfont.woff");
+}
+
+//regular font for body text
+@font-face { 
+	font-family: 'Source Sans Pro Regular';
+	src: url("../../fonts/SourceSansPro-Regular.woff");
+}
+
+//mixin to center main content
+//takes width value which is the media query width
+@mixin center($widthValue) {
+	margin: 0 auto;
+	width: $widthValue;
+}
+
+//convert illustrator tracking to css letter spacing
+@function trackingConversion($trackingValue) {
+	@return (($trackingValue / 1000) * 1em);
+}
+@mixin tracking ($trackingValue) {
+	letter-spacing: trackingConversion($trackingValue);
+}
+
+//set rem scaling base to 10 px from browser default of 16px
+html {
+	font-size: 62.5%; //62.5% of 16px is 10px
+}
+
+
+
+@mixin for-size($size) {
+	@if $size == $ipadVertical {
+		@media only screen and (min-width: $ipadVertical) { @content; }
+	}
+
+	@if $size == $ipadHorizontal {
+		@media only screen and (min-width: $ipadHorizontal) { @content; }
+	}
+}
+
+//make text large for section titles
+.big-text {
+	font-family: 'Montserrat-Semibold';
+	font-size: 7.2rem;
+	@include tracking(100);
+	margin:0;
+}
+
+
+// @media only screen and (min-width: $ipadVertical) {
+	
+// 	#header-content {
+// 		@include center($ipadVertical);
+// 	}
+
+// 	nav {
+// 		width: $ipadVertical;
+// 	}
+
+// }
+
+// @media only screen and (min-width: $ipadHorizontal) {
+	
+// 	#header-content {
+// 		@include center($ipadHorizontal);
+// 	}
+
+// 	nav {
+// 		width: $ipadHorizontal;
+// 	}
+// }
