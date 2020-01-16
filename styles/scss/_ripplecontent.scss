@@ -164,16 +164,18 @@ section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-con
 //gui code link bg color
 section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-gui-link {
 	background-color: #000000;
+	transition: background-color .5s;
 }
 
 //gui code link hover bg color
 section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-gui-link:hover {
-	background-color: #333333;
+	background-color: #333333db;
 }
 
 //deck link bg color
 section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-deck-link {
 	background-color: $rippleColor;
+	transition: background-color .5s;
 }
 
 //deck link hover bg color
@@ -198,6 +200,7 @@ section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-con
 	color: #666666;
 	width: 14.2rem;
 	height: 6.7rem;
+	transition: background-color .5s;
 }
 
 //mac link hover bg color
@@ -209,10 +212,11 @@ section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-con
 section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div > a#ripple-windows-link {
 	background-color: #0078D7;
 	color: #FFFFFF;
+	transition: background-color .5s;
 }
 
 //windows link hover bg color
 section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div > a#ripple-windows-link:hover {
-	background-color: #0096FC;
+	background-color: #31a2ff;
 }
 
