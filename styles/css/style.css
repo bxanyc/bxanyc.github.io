@@ -1147,6 +1147,7 @@ div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
+  transition: background-color .5s;
 }
 
 div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-media-type-two > a.ghg-link-button:hover, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div > a.ghg-link-button:hover {
@@ -1328,6 +1329,7 @@ div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-
   align-items: center;
   justify-content: center;
   color: #FFFFFF;
+  transition: background-color .5s;
 }
 
 div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div > a.smart-link-button:hover {
