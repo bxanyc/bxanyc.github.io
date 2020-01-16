@@ -482,7 +482,7 @@ nav {
   font-family: 'Source Sans Pro', sans-serif;
   position: fixed;
   top: 0;
-  z-index: 9999;
+  z-index: 5;
 }
 
 div#logo-container {
@@ -794,6 +794,14 @@ div.placeholder1 {
   width: 22.5rem;
   height: 26rem;
   background-color: grey;
+  transform: translateY(0%);
+  transition: transform 1s;
+}
+
+div.projects-image {
+  transform: translateY(0%);
+  filter: saturate(60%);
+  transition: transform 1s, filter .5s;
 }
 
 section#project-select > div.wrapper > div#projects-container p.projects-link {
@@ -802,17 +810,565 @@ section#project-select > div.wrapper > div#projects-container p.projects-link {
   line-height: 2.4rem;
   letter-spacing: 0.1em;
   color: #B3B3B3;
+  transition: color .2s;
 }
 
 section#project-select > div.wrapper > div#projects-container a {
   text-decoration: none;
 }
 
+section#project-select > div.wrapper > div#projects-container > div:hover p.projects-link {
+  color: #2ceda0;
+}
+
+section#project-select > div.wrapper > div#projects-container > div:hover div.projects-image {
+  transform: translateY(-1rem);
+  filter: saturate(100%);
+}
+
 /************************** Ripple Content Styling ***************************/
-section#ripple > div#ripple-section-one {
-  background-color: #68B8BA;
+section#ripple {
   margin-top: 1.7rem;
-  height: 100rem;
+}
+
+section#ripple > div#ripple-section-one {
+  background-color: #68b8ba;
+  padding-top: 8.8rem;
+  text-align: center;
+}
+
+section#ripple > div#ripple-section-one > img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 9rem;
+}
+
+section#ripple > div#ripple-section-one > iframe {
+  display: block;
+  margin: 0 auto;
+  display: inline-block;
+  margin-bottom: 9rem;
+}
+
+section#ripple > div#ripple-section-one > video {
+  margin-bottom: 9rem;
+}
+
+section#ripple > div#ripple-section-two > div#ripple-parallax-bg {
+  background-image: url("../../media/img/ripple/Screenshot_01.jpg");
+  height: 90rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section#ripple > div#ripple-section-three {
+  background-color: #FFFFFF;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > p.big-text {
+  margin-top: 5vh;
+  color: #68b8ba;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > p#ripple-description-text {
+  color: #68b8ba;
+  margin: 0 3rem;
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 8rem;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container {
+  margin: 0 3rem;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 6.6rem;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div#placeholder-team {
+  height: 39.9rem;
+  width: 100%;
+  margin-bottom: 6.6rem;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-text > div.ripple-content-divider {
+  height: .1rem;
+  width: 30.7rem;
+  background-color: #CCCCCC;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-text {
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  color: #68b8ba;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-text > div > p {
+  margin-top: 1.4rem;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.placeholder2 {
+  width: 63.3rem;
+  height: 35.8rem;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.placeholder3 {
+  width: 96rem;
+  height: 54rem;
+  background-color: grey;
+  margin-bottom: 12rem;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view, section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download {
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  color: #B3B3B3;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div#ripple-view-divider {
+  height: .1rem;
+  width: 63.3rem;
+  background-color: #CCCCCC;
+  margin-bottom: 2.6rem;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view p, section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download p {
+  margin: 0;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div#ripple-download-divider {
+  height: .1rem;
+  width: 30.7rem;
+  background-color: #CCCCCC;
+  margin-bottom: 2.6rem;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div, section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-gui-link, section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-deck-link {
+  width: 30.7rem;
+  height: 6.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-gui-link {
+  background-color: #000000;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-gui-link:hover {
+  background-color: #333333;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-deck-link {
+  background-color: #68b8ba;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-deck-link:hover {
+  background-color: #7FDDDD;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div > a#ripple-mac-link, section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div > a#ripple-windows-link {
+  width: 14.4rem;
+  height: 6.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div > a#ripple-mac-link {
+  background-color: #FFFFFF;
+  border: 1px solid #B3B3B3;
+  color: #666666;
+  width: 14.2rem;
+  height: 6.7rem;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div > a#ripple-mac-link:hover {
+  background-color: #D8D8D8;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div > a#ripple-windows-link {
+  background-color: #0078D7;
+  color: #FFFFFF;
+}
+
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div > a#ripple-windows-link:hover {
+  background-color: #0096FC;
+}
+
+/************************** GHG Content Styling ***************************/
+section#ghg {
+  margin-top: 1rem;
+}
+
+section#ghg > div#ghg-section-one {
+  background-color: #5dcac885;
+  display: flex;
+  flex-direction: column;
+}
+
+section#ghg > div#ghg-section-one > img#ghg-logo {
+  margin: 9rem 0;
+  align-self: center;
+}
+
+section#ghg > div#ghg-section-one > img#ghg-site-img {
+  align-self: center;
+  margin-bottom: 9rem;
+}
+
+section#ghg > div#ghg-section-two > div.wrapper > p#ghg-line {
+  margin-top: 5vh;
+  color: #5DCAC8;
+}
+
+div#ghg-section-two > div.wrapper > p#ghg-description-text {
+  color: #5DCAC8;
+  margin: 0 3rem;
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 8rem;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container {
+  margin: 0 3rem;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 6.6rem;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div.ghg-content-divider {
+  height: .1rem;
+  width: 38.8rem;
+  background-color: #CCCCCC;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div > p#ghg-header {
+  margin-top: 1.4rem;
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+  letter-spacing: 0.1em;
+  color: #5DCAC8;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div > div > p {
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  color: #B3B3B3;
+  margin-bottom: 0;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-media {
+  display: flex;
+  align-self: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-media > p#ghg-caption {
+  margin-left: 2.1rem;
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  color: #B3B3B3;
+  font-style: italic;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-media-type-two {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-media-type-two > p.ghg-link-title, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div > p.ghg-link-title {
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  color: #999999;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div > p.ghg-link-title {
+  margin-top: 5rem;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-media-type-two > a.ghg-link-button, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div > a.ghg-link-button {
+  width: 30.6rem;
+  height: 6.9rem;
+  background-color: #5DCAC8;
+  text-decoration: none;
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-media-type-two > a.ghg-link-button:hover, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div > a.ghg-link-button:hover {
+  background-color: #70EFE8;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-wireframe-images > div.my-gallery, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-moodboard-images > div.my-gallery, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-final-images > div.my-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 7rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+div#ghg-wireframe-images figure.remove-margin, div#ghg-moodboard-images figure.remove-margin, div#ghg-final-images figure.remove-margin {
+  margin: 0;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-wireframe-images, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-moodboard-images, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-final-images {
+  width: 100%;
+}
+
+div#ghg-final-images figure.margin-top-final {
+  margin-top: 2.6rem;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-wireframe-images > div.ghg-placeholder4 {
+  background-color: grey;
+  width: 30.7rem;
+  height: 44.9rem;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-moodboard-images > div.ghg-placeholder5, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-final-images > div.ghg-placeholder5 {
+  background-color: grey;
+  width: 30.7rem;
+  height: 12.7rem;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-final-images > div.ghg-placeholder6 {
+  background-color: grey;
+  width: 47.0rem;
+  height: 12.7rem;
+  margin-top: 2.6rem;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div#ghg-deck-group {
+  margin-top: 20rem;
+}
+
+/************************** Smart Content Styling ***************************/
+section#smart > div#smart-section-one {
+  background-color: #FFFFFF;
+  border-top: 1px solid #82BC41;
+  display: flex;
+  justify-content: center;
+}
+
+section#smart > div#smart-section-one > img#smart-logo {
+  margin: 9rem 0;
+}
+
+section#smart > div#smart-section-two {
+  display: flex;
+  justify-content: center;
+  background-color: #82BC41;
+}
+
+section#smart > div#smart-section-two > img#smart-wireframe {
+  margin: 9rem 0;
+}
+
+section#smart > div#smart-section-three > div.wrapper > p#smart-line {
+  margin-top: 5vh;
+  color: #82BC41;
+}
+
+div#smart-section-three > div.wrapper > p#smart-description-text {
+  color: #82BC41;
+  margin: 0 3rem;
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 8rem;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container {
+  margin: 0 3rem;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 6.6rem;
+  justify-content: space-around;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div.reverse-grouping {
+  flex-direction: row-reverse;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div.justify-content-left {
+  justify-content: center;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-text > div.smart-content-divider {
+  height: .1rem;
+  width: 38.8rem;
+  background-color: #CCCCCC;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-text > div > p#smart-header {
+  margin-top: 1.4rem;
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 3.6rem;
+  line-height: 4.3rem;
+  letter-spacing: 0.1em;
+  color: #82BC41;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-text > div > div > p, div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-text > div > div.smart-paragraphs {
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  color: #B3B3B3;
+  margin-bottom: 0;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-media {
+  display: flex;
+  align-self: center;
+  align-items: center;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-text > div > div.smart-paragraphs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-text > div > div.smart-paragraphs > div.wireframe-right-paragraph {
+  margin-left: 10rem;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-text > div > div.wireframe-placeholder-1 {
+  width: 79.6rem;
+  height: 15.9rem;
+  background-color: grey;
+  margin: 2.5rem 0;
+}
+
+div.smart-grouping div.smart-text div.my-gallery figure {
+  margin: 2.5rem 0;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div > p.smart-link-title {
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  color: #999999;
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div > a.smart-link-button {
+  width: 30.6rem;
+  height: 6.9rem;
+  background-color: #82BC41;
+  text-decoration: none;
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div > a.smart-link-button:hover {
+  background-color: #A1E04F;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div#smart-strategy-link {
+  margin-top: 18rem;
+}
+
+/************************** About Me Content Styling ***************************/
+section#about-me {
+  background-color: #191D24;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section#about-me > div > p#about-me-label {
+  color: #ffffff;
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+}
+
+section#about-me > div > p#about-me-para-one {
+  color: #2ceda0;
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+  font-family: 'Source Sans Pro Light', sans-serif;
+  margin-bottom: 4rem;
+}
+
+section#about-me > div > p.about-me-text {
+  color: #bfb8b8;
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 0.1em;
+}
+
+section#about-me > div > p#about-text-spacing {
+  margin-bottom: 2.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

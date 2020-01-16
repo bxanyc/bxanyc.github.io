@@ -1,0 +1,193 @@
+/************************** GHG Content Styling ***************************/
+section#ghg {
+	margin-top: 1rem;
+	// height: 50rem;
+}
+
+section#ghg > div#ghg-section-one {
+	// background-color: $ghgColor;
+	background-color: #5dcac885;
+	display: flex;
+	// align-content: center;
+	// justify-content: center;
+	flex-direction: column;
+	// align-self: center;
+}
+
+//align-self stops image from stretching  
+section#ghg > div#ghg-section-one > img#ghg-logo {
+	// @include centerElement();
+	margin: 9rem 0;
+	align-self:center;
+	// width: 100%;
+	// align-self: center;
+}
+
+section#ghg > div#ghg-section-one > img#ghg-site-img {
+		// align-self: center;
+		align-self:center;
+		margin-bottom: 9rem;
+}
+
+section#ghg > div#ghg-section-two {
+
+}
+
+section#ghg > div#ghg-section-two > div.wrapper > p#ghg-line {
+	margin-top: 5vh;
+	color: $ghgColor;
+}
+
+div#ghg-section-two > div.wrapper > p#ghg-description-text {
+	color: $ghgColor;
+	margin: 0 3rem;
+	@include bodyText(1.4rem, 2.5rem);
+	margin-bottom:8rem;
+}
+
+//set the left and right margins for the body content container
+div#ghg-section-two > div.wrapper > div#ghg-content-container {
+	margin: 0 3rem;
+}
+
+//grouping of content rows consisting of text and images and the divider line
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping {
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	margin-bottom: 6.6rem;
+}
+
+//grey separating line
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div.ghg-content-divider {
+	height: .1rem;
+	width: 38.8rem;
+	background-color: #CCCCCC;
+}
+
+//header text for sections
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div > p#ghg-header {
+	margin-top: 1.4rem;
+	@include bodyText(3.6rem, 4.3rem);
+	color: $ghgColor;
+}
+
+//body text for sections under heading titles
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div > div > p {
+	@include bodyText(1.4rem, 2.5rem);
+	color: $ghgBodyTextColor;
+	margin-bottom: 0;
+}
+
+// container for content on right side of headings and text, for images and captions
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-media {
+	display: flex;
+	align-self: center;
+	align-items: center;
+	margin: 0 auto;
+}
+
+//caption text for nav button
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-media > p#ghg-caption {
+	margin-left: 2.1rem;
+	@include bodyText(1.4rem, 2.5rem);
+	color: $ghgBodyTextColor;
+	font-style: italic;
+}
+
+// container for content on right side of headings and text, images/links
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-media-type-two {
+	display: flex;
+	// align-self: center;
+	// align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+//title text above project deck buttons
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-media-type-two > p.ghg-link-title, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div > p.ghg-link-title  {
+	@include bodyText(1.4rem, 2.5rem);
+	color: #999999;
+	margin-top: 0;
+	margin-bottom: .5rem;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div > p.ghg-link-title {
+	margin-top: 5rem;
+}
+
+//link button for project deck content
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-media-type-two > a.ghg-link-button, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div > a.ghg-link-button {
+	width: 30.6rem;
+	height: 6.9rem;
+	background-color: $ghgColor;
+	text-decoration: none;
+	@include bodyText(1.4rem, 2.5rem);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFFFFF;
+}
+
+//hover color change for project deck link buttons
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-media-type-two > a.ghg-link-button:hover, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div.ghg-text > div > a.ghg-link-button:hover {
+	background-color: #70EFE8;
+}
+
+//container for ghg wireframe images
+//uses flex to align content
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-wireframe-images > div.my-gallery, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-moodboard-images > div.my-gallery, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-final-images > div.my-gallery {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 7rem;
+	width: 100%;
+	flex-wrap: wrap;
+}
+
+//remove margin from figure element to prevent issues with flex
+div#ghg-wireframe-images figure.remove-margin, div#ghg-moodboard-images figure.remove-margin, div#ghg-final-images figure.remove-margin {
+	margin: 0;
+}
+
+//border to indicate an image opens into gallery
+img.gallery-image-border {
+	// border: 2.6px solid $ghgColor;
+}
+
+//allows full width of gallery container to be used
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-wireframe-images, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-moodboard-images, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-final-images {
+	width: 100%;
+}
+
+//add margin to the top of the last two final images
+div#ghg-final-images figure.margin-top-final {
+	margin-top: 2.6rem;
+}
+
+//placeholder boxes for ghg wireframes
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-wireframe-images > div.ghg-placeholder4 {
+	background-color: grey;
+	width: 30.7rem;
+	height:44.9rem;
+}
+
+//three image boxes
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-moodboard-images > div.ghg-placeholder5, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-final-images > div.ghg-placeholder5 {
+	background-color: grey;
+	width: 30.7rem;
+	height: 12.7rem;
+}
+
+//two image boxes
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-final-images > div.ghg-placeholder6 {
+	background-color: grey;
+	width: 47.0rem;
+	height: 12.7rem;
+	margin-top: 2.6rem;
+}
+
+div#ghg-section-two > div.wrapper > div#ghg-content-container > div#ghg-deck-group {
+	margin-top: 20rem;
+}

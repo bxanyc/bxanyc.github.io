@@ -3,6 +3,10 @@ $ipadHorizontal: 1024px; //landscape width for ipad dimensions
 $codeBGColor: #191D24; //code section background color
 $blueLinkColor: #18C6FE; //color of navigation links
 $mintLinkColor: #2ceda0; //accent color
+$rippleColor: #68b8ba;
+$ghgColor: #5DCAC8;
+$ghgBodyTextColor: #B3B3B3;
+$smartColor: #82BC41;
 
 //font for large text
 @font-face { 
@@ -27,6 +31,18 @@ $mintLinkColor: #2ceda0; //accent color
 @mixin center($widthValue) {
 	margin: 0 auto;
 	width: $widthValue;
+}
+
+@mixin centerElement() {
+	display:block;
+	margin: 0 auto;
+}
+
+@mixin bodyText($fontSize, $lineHeight) {
+	font-family: 'Source Sans Pro Regular', sans-serif;
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	@include tracking(100);
 }
 
 //convert illustrator tracking to css letter spacing

@@ -95,5 +95,39 @@ function typingText() {
 	    	removeCursor($('p#projects-line'));
 	    }
 	})
-	.tiType('PROJECTS');
+	.tiType('PROJECTS'), 
+	$('p#ripple-line').typeIt({
+		speed: 50,
+	    autoStart: false,
+	    // callback: removeCursor($('p#projects-line'))
+	    callback: function() {
+	    	//alert("done");
+	    	removeCursor($('p#ripple-line'));
+	    }
+	})
+	.tiType('RIPPLE'), 
+	$('p#ghg-line').typeIt({
+		speed: 50,
+	    autoStart: false,
+	    // callback: removeCursor($('p#projects-line'))
+	    callback: function() {
+	    	//alert("done");
+	    	removeCursor($('p#ghg-line'));
+	    }
+	})
+	.tiType('GREATEST')
+	.tiBreak()
+	.tiType('HOTELS')
+	.tiBreak()
+	.tiType('GROUP'), 
+	$('p#smart-line').typeIt({
+		speed: 50,
+	    autoStart: false,
+	    // callback: removeCursor($('p#projects-line'))
+	    callback: function() {
+	    	//alert("done");
+	    	removeCursor($('p#smart-line'));
+	    }
+	})
+	.tiType('SMART');
 }

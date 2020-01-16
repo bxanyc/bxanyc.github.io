@@ -1,7 +1,218 @@
 /************************** Ripple Content Styling ***************************/
 
-section#ripple > div#ripple-section-one {
-	background-color: #68B8BA;
+section#ripple {
+	// position: relative;
 	margin-top: 1.7rem;
-	height: 100rem;
 }
+
+//section for logo and video
+section#ripple > div#ripple-section-one {
+	background-color: $rippleColor;
+	// height: 100rem;
+	padding-top: 8.8rem;
+	text-align: center;
+}
+
+//center ripple logo
+section#ripple > div#ripple-section-one > img {
+	@include centerElement();
+	margin-bottom: 9rem;
+}
+
+//youtube video centering
+section#ripple > div#ripple-section-one > iframe {
+	@include centerElement();
+	display: inline-block;
+	margin-bottom: 9rem;
+}
+
+//custom video for ripple demo
+section#ripple > div#ripple-section-one > video {
+	margin-bottom: 9rem;
+}
+
+//parallax scroll for ripple environment background
+section#ripple > div#ripple-section-two > div#ripple-parallax-bg {
+	background-image: url("../../media/img/ripple/Screenshot_01.jpg");
+	height: 90rem;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+//ripple content section
+section#ripple > div#ripple-section-three {
+	background-color: #FFFFFF;
+	// height: 100rem;
+}
+
+//ripple big title text
+section#ripple > div#ripple-section-three > div.wrapper > p.big-text {
+	margin-top: 5vh;
+	color: $rippleColor;
+}
+
+//ripple lead text
+section#ripple > div#ripple-section-three > div.wrapper > p#ripple-description-text {
+	color: $rippleColor;
+	margin: 0 3rem;
+	@include bodyText(1.4rem, 2.5rem);
+	margin-bottom: 8rem;
+}
+
+//container to organize all of ripple body content
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container {
+	margin: 0 3rem;
+}
+
+//grouping for text and media
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping {
+	display: flex;
+	flex-direction:row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 6.6rem;
+}
+
+//placeholder size and styling for team image
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div#placeholder-team {
+	//background-color: grey;
+	height: 39.9rem;
+	width: 100%;
+	margin-bottom: 6.6rem;
+}
+
+//dividing line
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-text > div.ripple-content-divider {
+	height: .1rem;
+	width: 30.7rem;
+	background-color: #CCCCCC;
+}
+
+//styling for ripple body text
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-text {
+	@include bodyText(1.4rem, 2.5rem);
+	color: $rippleColor;
+}
+
+//margin for paragraph text
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-text > div > p {
+	margin-top: 1.4rem;
+}
+
+//placeholder styling for media 
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.placeholder2 {
+	width: 63.3rem;
+	height: 35.8rem;
+	// background-color: grey;
+}
+
+//placeholder styling for ripple onboarding 
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.placeholder3 {
+	width: 96rem;
+	height: 54rem;
+	background-color: grey;
+	margin-bottom: 12rem;
+}
+
+//ripple links
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view, section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download {
+	@include bodyText(1.4rem, 2.5rem);
+	color: #B3B3B3;
+}
+
+//divider for ripple view
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div#ripple-view-divider {
+	height: .1rem;
+	width: 63.3rem;
+	background-color: #CCCCCC;
+	margin-bottom: 2.6rem;
+}
+
+//clear margins for view text and download text
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view p, section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download p {
+	margin: 0;
+}
+
+//divider for ripple downloads
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div#ripple-download-divider {
+	height: .1rem;
+	width: 30.7rem;
+	background-color: #CCCCCC;
+	margin-bottom: 2.6rem;
+}
+
+//ripple view and download containers
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div, section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+//ripple gui and deck link styling
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-gui-link, section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-deck-link {
+	width: 30.7rem;
+	height: 6.9rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+//gui code link bg color
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-gui-link {
+	background-color: #000000;
+}
+
+//gui code link hover bg color
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-gui-link:hover {
+	background-color: #333333;
+}
+
+//deck link bg color
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-deck-link {
+	background-color: $rippleColor;
+}
+
+//deck link hover bg color
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view > div > a#ripple-deck-link:hover {
+	background-color: #7FDDDD;
+}
+
+//ripple mac and windows link styling
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div > a#ripple-mac-link, section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div > a#ripple-windows-link {
+	width: 14.4rem;
+	height: 6.9rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+}
+
+//mac link bg color
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div > a#ripple-mac-link {
+	background-color: #FFFFFF;
+	border: 1px solid #B3B3B3;
+	color: #666666;
+	width: 14.2rem;
+	height: 6.7rem;
+}
+
+//mac link hover bg color
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div > a#ripple-mac-link:hover {
+	background-color: #D8D8D8;
+}
+
+//windows link bg color
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div > a#ripple-windows-link {
+	background-color: #0078D7;
+	color: #FFFFFF;
+}
+
+//windows link hover bg color
+section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download > div > a#ripple-windows-link:hover {
+	background-color: #0096FC;
+}
+

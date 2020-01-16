@@ -1,0 +1,147 @@
+/************************** Smart Content Styling ***************************/
+
+//container for smart logo
+section#smart > div#smart-section-one {
+	background-color: #FFFFFF;
+	border-top: 1px solid $smartColor;
+	display: flex;
+	justify-content: center;
+}
+
+//spacing for smart logo
+section#smart > div#smart-section-one > img#smart-logo {
+	margin: 9rem 0;
+}
+
+//container for smart wireframe
+section#smart > div#smart-section-two {
+	display: flex;
+	justify-content: center;
+	background-color: $smartColor;
+}
+
+//spacing for smart wireframe
+section#smart > div#smart-section-two > img#smart-wireframe {
+	margin: 9rem 0;
+}
+
+//smart main header
+section#smart > div#smart-section-three > div.wrapper > p#smart-line {
+	margin-top: 5vh;
+	color: $smartColor;
+}
+
+//description text under smart main header
+div#smart-section-three > div.wrapper > p#smart-description-text {
+	color: $smartColor;
+	margin: 0 3rem;
+	@include bodyText(1.4rem, 2.5rem);
+	margin-bottom:8rem;
+}
+
+//set the left and right margins for the body content container
+div#smart-section-three > div.wrapper > div#smart-content-container {
+	margin: 0 3rem;
+}
+
+//grouping of content rows consisting of text and images and the divider line
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping {
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+	margin-bottom: 6.6rem;
+	justify-content: space-around;
+}
+
+//reverse the order of text and image
+div#smart-section-three > div.wrapper > div#smart-content-container > div.reverse-grouping {
+	flex-direction: row-reverse;
+}
+
+//reverse the order of text and image
+div#smart-section-three > div.wrapper > div#smart-content-container > div.justify-content-left {
+	justify-content: center;
+}
+
+//grey separating line
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-text > div.smart-content-divider {
+	height: .1rem;
+	width: 38.8rem;
+	background-color: #CCCCCC;
+}
+
+//header text for content sections
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-text > div > p#smart-header {
+	margin-top: 1.4rem;
+	@include bodyText(3.6rem, 4.3rem);
+	color: $smartColor;
+}
+
+//body text for content sections under heading titles
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-text > div > div > p, div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-text > div > div.smart-paragraphs {
+	@include bodyText(1.4rem, 2.5rem);
+	color: $ghgBodyTextColor;
+	margin-bottom: 0;
+}
+
+//body text for sections under heading titles
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-media {
+	display: flex;
+	align-self: center;
+	align-items: center;
+}
+
+//positioning for text paragraphs for wireframe section
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-text > div > div.smart-paragraphs {
+	display: flex;
+	flex-direction:row;
+	flex-wrap: wrap;
+}
+
+//spacing for paragraph on the right side of page for wireframe section
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-text > div > div.smart-paragraphs > div.wireframe-right-paragraph{
+	margin-left: 10rem;
+}
+
+//long horizontal placeholder box
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div.smart-text > div > div.wireframe-placeholder-1 {
+	width: 79.6rem;
+	height: 15.9rem;
+	background-color: grey;
+	margin: 2.5rem 0;
+}
+
+//remove left and right margin and add top and bottom margin for figure elements
+div.smart-grouping div.smart-text div.my-gallery figure {
+	margin: 2.5rem 0;
+}
+
+//link label text
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div > p.smart-link-title {
+	@include bodyText(1.4rem, 2.5rem);
+	color: #999999;
+	margin-top: 0;
+	margin-bottom: .5rem;
+}
+
+//link styling for strategy briefing
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div > a.smart-link-button {
+	width: 30.6rem;
+	height: 6.9rem;
+	background-color: $smartColor;
+	text-decoration: none;
+	@include bodyText(1.4rem, 2.5rem);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFFFFF;
+}
+
+div#smart-section-three > div.wrapper > div#smart-content-container > div.smart-grouping > div > a.smart-link-button:hover {
+	background-color: #A1E04F;
+}
+
+//margin for strategy briefing section
+div#smart-section-three > div.wrapper > div#smart-content-container > div#smart-strategy-link {
+margin-top: 18rem;
+}

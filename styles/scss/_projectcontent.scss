@@ -12,9 +12,8 @@
 	}
 }
 
-div.wrapper {
-	// height:100rem;
-	// background-color: red;
+section#project-select {
+	// position:relative;
 }
 
 //move later to base.scss
@@ -55,12 +54,13 @@ section#project-select > div.wrapper > div#projects-container > div#projects-tex
 	// margin-top: 10.8rem;
 }
 
-//project selection section text
+//project selection body text
 section#project-select > div.wrapper > div#projects-container > div#projects-text {
-	font-family: 'Source Sans Pro Regular', sans-serif;
-	font-size: 1.4rem;
-	line-height: 2.5rem;
-	@include tracking(100);
+	// font-family: 'Source Sans Pro Regular', sans-serif;
+	// font-size: 1.4rem;
+	// line-height: 2.5rem;
+	// @include tracking(100);
+	@include bodyText(1.4rem, 2.5rem);
 	color: $codeBGColor;
 }
 
@@ -69,20 +69,44 @@ div.placeholder1 {
 	width: 22.5rem;
 	height: 26rem;
 	background-color: grey;
+	transform: translateY(0%);
+	transition: transform 1s;
+}
+
+//project image for link
+//default position
+div.projects-image {
+	transform: translateY(0%);
+	filter: saturate(60%);
+	transition: transform 1s, filter .5s;
 }
 
 //link text for project selection
 section#project-select > div.wrapper > div#projects-container p.projects-link {
-	font-family: 'Source Sans Pro Regular', sans-serif;
-	font-size: 1.4rem;
-	line-height: 2.4rem;
-	@include tracking(100);
+	// font-family: 'Source Sans Pro Regular', sans-serif;
+	// font-size: 1.4rem;
+	// line-height: 2.4rem;
+	// @include tracking(100);
+	@include bodyText(1.4rem, 2.4rem);
 	color: #B3B3B3;
+	// transform: translateY(0%);
+	transition: color .2s;
 }
 
 //link text styling
 section#project-select > div.wrapper > div#projects-container a {
 	text-decoration: none;
+}
+
+//Change the color of the project link to mint on hover
+section#project-select > div.wrapper > div#projects-container > div:hover p.projects-link {
+	color: $mintLinkColor;
+}
+
+//Raise y position of project image on hover
+section#project-select > div.wrapper > div#projects-container > div:hover div.projects-image {
+	transform: translateY(-1rem);
+	filter: saturate(100%);
 }
 
 

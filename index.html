@@ -18,6 +18,22 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/jquery.typeit/4.3.0/typeit.min.js"></script>
 		<script type="text/javascript" src="scripts/main.js"></script>
+
+		<!-- PhotoSwipe files -->
+		<!-- Core CSS file -->
+		<link rel="stylesheet" href="styles/css/photoswipe-css/photoswipe.css">
+		<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+		In the folder of skin CSS file there are also:
+		- .png and .svg icons sprite,
+		- preloader.gif (for browsers that do not support CSS animations) -->
+		<link rel="stylesheet" href="styles/css/photoswipe-css/default-skin/default-skin.css">
+		<!-- Core JS file -->
+		<script src="scripts/photoswipe-js/photoswipe.min.js"></script>
+		<!-- UI JS file -->
+		<script src="scripts/photoswipe-js/photoswipe-ui-default.min.js"></script>
+		<!-- Photoswipe JS Functionality -->
+		<script src="scripts/photoswipe-js/photoswipe-index.js"></script>
+
 	</head>
 	<body>
 		<div id="main-container">
@@ -28,15 +44,15 @@
 						<div id="nav-links">
 							<ul>
 								<li id="dropdown-parent">
-									<a href="#">PROJECTS<span class="arrow-down"></span></a>
+									<a href="#" onclick="return false;">PROJECTS<span class="arrow-down"></span></a>
 									<ul id="dropdown-items">
-										<li><a href="#">RIPPLE</a></li>
-										<li><a href="#">GREATEST HOTELS GROUP</a></li>
-										<li><a href="#">SMART</a></li>
+										<li><a href="#ripple">RIPPLE</a></li>
+										<li><a href="#ghg">GREATEST HOTELS GROUP</a></li>
+										<li><a href="#smart">SMART</a></li>
 									</ul>
 								</li>
 								<li><a href="#">RESUME</a></li>
-								<li><a href="#">ABOUT</a></li>
+								<li><a href="#about-me">ABOUT</a></li>
 								<li><a href="#">CONTACT</a></li>
 							</ul>
 						</div>
@@ -78,7 +94,6 @@
 					<p id="projects-line" class="big-text"></p>
 					
 					<div id="projects-container">
-						<!-- <div id="projects-line-div"></div> -->
 						<div id="projects-text">
 							<div id="projects-line-div"></div>
 							<div>
@@ -87,25 +102,25 @@
 							</div>
 						</div>
 						<div id="projects-ripple">
-							<a href="#" title="">
-								<div class="placeholder1">
-								
-							</div>
-							<p class="projects-link">RIPPLE</p>
+							<a href="#ripple" title="Explore the Coral Reefs">
+								<div class="projects-image">
+									<img src="media/img/ripple/projects-image-ripple.jpg" alt="">
+								</div>
+								<p class="projects-link">RIPPLE</p>
 							</a>	
 						</div>
 						<div id="projects-ghg">
-							<a href="" title="">
-								<div class="placeholder1">
-								
-							</div>
-							<p class="projects-link">GREATEST HOTELS GROUP</p>
+							<a href="#ghg" title="Find Your Next Luxury Destination">
+								<div class="projects-image">
+									<img src="media/img/ghg/projects-image-ghg-2.jpg" alt="">
+								</div>
+								<p class="projects-link">GREATEST HOTELS GROUP</p>
 							</a>
 						</div>
 						<div id="projects-smart">
-							<a href="" title="">
-								<div class="placeholder1">
-									
+							<a href="#smart" title="Building a Brand Strategy">
+								<div class="projects-image">
+									<img src="media/img/smart/projects-image-smart.jpg" alt="">
 								</div>
 								<P class="projects-link">SMART</P>
 							</a>
@@ -115,9 +130,627 @@
 			</section>
 			<section id="ripple">
 				<div id="ripple-section-one">
-					Ripple
+					<img src="media/img/ripple/Ripple-Logo-Color-Whitespace-crop.png" alt="ripple project logo"/>
+					<!-- <video width="826" height="466" autobuffer autoloop loop controls></video> -->
+					<iframe width="826" height="466" src="https://www.youtube-nocookie.com/embed/xD6p3zLV-GU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<!-- <iframe width="826" height="466" src="https://www.youtube-nocookie.com/embed/zXSbld0PK2s?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+				</div>
+				<div id="ripple-section-two">
+					<div id="ripple-parallax-bg">
+						
+					</div>
+				</div>
+				<div id="ripple-section-three">
+					<div class="wrapper">
+						<p id="ripple-line" class="big-text"></p>
+						<p id="ripple-description-text">is a virtual coral reef environment that engages users through ocean education and exploration.</p>
+						<div id="ripple-content-container">
+							<div id="placeholder-team">
+							<video src="https://giant.gfycat.com/NervousFirmFossa.webm" autoplay autobuffer loop muted></video>
+							</div>
+							<div class="ripple-grouping">
+								<div class="ripple-text">
+									<div class="ripple-content-divider">
+									
+									</div>
+									<div>
+										<p>This was a large scale group project <br>where in my role as a developer, my <br>primary task was to implement the <br>graphical user interface alongside <br>the user interactions.</p>
+										<p>As a user approaches an information <br>icon populated throughout the <br>environment, they are presented <br>with visual cues to learn about a <br>specific danger facing coral reefs.</p>
+									</div>
+								</div>
+								<div class="placeholder2">
+									<video src="https://giant.gfycat.com/ColdMessyEnglishpointer.webm" controls muted autobuffer loop poster="media/img/ripple/ripple2.jpg"></video>
+								</div>
+							</div>
+							<div class="ripple-grouping">
+								<div class="placeholder2">
+									<video src="https://giant.gfycat.com/HardSafeChupacabra.webm"controls muted autobuffer loop poster="media/img/ripple/ripple3.jpg"></video>
+								</div>
+								<div class="ripple-text">
+									<div class="ripple-content-divider">
+									
+									</div>
+									<div>
+										<p>My role had me implementing behavior <br>such as the following in these <br>occurrences. The way the knowledge <br>icons continually face the user, the <br>visual effects in the presentation of <br>the text and information panels, the <br>dimming of the screen, and the slow <br>down of the environment.</p>
+									</div>
+								</div>
+							</div>
+							<div class="ripple-grouping">
+								<div class="ripple-text">
+									<div class="ripple-content-divider">
+									
+									</div>
+									<div>
+										<p>This was a project that was made <br>possible through the use of the Leap <br>Motion Controller device and it <br>allowed my team and I to create a <br>very unique experience to engage <br>and inform users.</p>
+									</div>
+								</div>
+								<div class="placeholder2">
+									<video src="https://giant.gfycat.com/VictoriousLightheartedAmericanquarterhorse.webm" autoplay muted autobuffer loop ></video>
+								</div>
+							</div>
+							<div class="placeholder3">
+							
+							</div>
+							<div class="ripple-grouping">
+								<div class="ripple-view">
+									<p>VIEW</p>
+									<div id="ripple-view-divider">
+										
+									</div>
+									<div>
+										<a id="ripple-gui-link" href="#" title="GUI Code Sample">GUI CODE SAMPLE</a>
+										<a id="ripple-deck-link" href="#" title="Final Deck">FINAL DECK</a>
+									</div>
+								</div>
+								<div class="ripple-download">
+									<p>DOWNLOAD</p>
+									<div id="ripple-download-divider">
+										
+									</div>
+									<div>
+										<a id="ripple-mac-link" href="#" title="Mac">MAC</a>
+										<a id="ripple-windows-link" href="#" title="Windows">WINDOWS</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="ghg">
+				<div id="ghg-section-one">
+					<img id="ghg-logo" src="media/img/ghg/ghglogo.png" alt="Greatest Hotels Group Logo"/>
+					<img id="ghg-site-img" src="media/img/ghg/ghgsite.jpg" alt="Greatest Hotels Website Composition"/>
+				</div>
+				<div id="ghg-section-two">
+					<div class="wrapper">						
+						<p id="ghg-line" class="big-text"></p>
+						<p id="ghg-description-text">is a complete rebranding of an existing web presence to showcase Google Business Photos for luxury destinations.</p>
+						<div id="ghg-content-container">
+							<div class="ghg-grouping">
+								<div class="ghg-text">
+									<div class="ghg-content-divider">
+										
+									</div>
+									<div>
+										<p id="ghg-header">Project<br>Statement</p>
+										<div>
+											<p>To create a best-in-class experience that <br>leverages Google Business Photos, providing <br>an immersive virtual environment that exposes <br>customers to the most sophisticated, high class <br>luxury hotels that span the world.</p>
+										</div>
+									</div>
+								</div>
+								<div class=ghg-media>
+									<img id="ghg-gbp-nav" src="media/img/ghg/ghg-nav.png" alt="Google Business Photos Navigation Control">
+									<p id="ghg-caption">Enabling the interactive <br>exploration of hotel <br>interiors utilizing Google <br>Business Photos.</p>
+								</div>
+							</div>
+							<div class="ghg-grouping">
+								<div class="ghg-text">
+									<div class="ghg-content-divider">
+										
+									</div>
+									<div>
+										<p id="ghg-header">Research</p>
+										<div>
+											<p>A comprehensive redesign begins with <br>thorough, detailed research. A multitude of <br>aspects need to be investigated, ranging from <br>examining competing sites to creating user <br>personas in order to udnerstand various use <br>cases. This is all done to craft an experience <br>that excels in its purpose, going beyond basic <br>needs.</p>
+											<p>In-depth research informs the core aspects of a <br>site's construction, allowing a detailed path to <br>be mapped out with regards to how the user <br>experience will flow.</p>
+										</div>
+									</div>
+								</div>
+								<div class="ghg-media-type-two">
+									<p class="ghg-link-title">PROJECT DECK</p>
+									<a class="ghg-link-button" href="#" title="Project Deck Research">RESEARCH</a>
+								</div>
+							</div>
+							<div class="ghg-grouping">
+								<img src="media/img/ghg/GHG-Taxonomy-Map-960.png" alt="Greatest Hotels Group Taxonomy Map">
+							</div>
+							<div class="ghg-grouping">
+								<div class="ghg-text">
+									<div class="ghg-content-divider">
+										
+									</div>
+									<div>
+										<p id="ghg-header">Branding</p>
+										<div>
+											<p>To find the symbol that embodies the identity <br>of a site, iteration and experimentation <br>become a key component to designing a logo.</p>
+										</div>
+										<p class="ghg-link-title">PROJECT DECK</p>
+										<a class="ghg-link-button" href="#" title="Project Deck Logo Iteration">LOGO ITERATION</a>
+									</div>
+								</div>
+								<div class="ghg-media-type-two">
+									<img src="media/img/ghg/ghg-logo-branding.png" alt="Greatest Hotels Group Logo Branding">
+								</div>
+							</div>
+							<div class="ghg-grouping">
+								<div class="ghg-text">
+									<div class="ghg-content-divider">
+										
+									</div>
+									<div>
+										<p id="ghg-header">Wireframes</p>
+										<div>
+											<p>Iteration is vital with the construction of low <br>fidelity to high fidelity wireframes.</p>
+											<p>The design encompasses a truer reflection of <br>the various forms of research conducted as it <br>progresses through each iteration.</p>
+										</div>
+									</div>
+								</div>
+								<div class="ghg-media-type-two">
+									<p class="ghg-link-title">PROJECT DECK</p>
+									<a class="ghg-link-button" href="#" title="Project Deck Wireframes">WIREFRAMES</a>
+								</div>
+								<div id="ghg-wireframe-images">
+									<!-- <div class="ghg-placeholder4">
+										
+									</div>
+									<div class="ghg-placeholder4">
+										
+									</div>
+									<div class="ghg-placeholder4">
+										
+									</div> -->
+									<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+								      <figure class="remove-margin" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								        <a href="media/img/ghg/GHGWireframe1.png" itemprop="contentUrl" data-size="912x954">
+								          <img class="gallery-image-border" src="media/img/ghg/ThumbGHGWireframe1.jpg" itemprop="thumbnail" alt="Basic black and white wireframe showing webpage design" />
+								        </a>
+								      </figure>
+								      
+								      <figure class="remove-margin" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								        <a href="media/img/ghg/GHGWireframe2.png" itemprop="contentUrl" data-size="1024x1418">
+								          <img class="gallery-image-border" src="media/img/ghg/ThumbGHGWireframe2.jpg" itemprop="thumbnail" alt="Image description" />
+								        </a>
+								      </figure>
+								      
+								      <figure class="remove-margin" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								        <a href="media/img/ghg/GHGWireframe3.png" itemprop="contentUrl" data-size="1025x2768">
+								          <img class="gallery-image-border" src="media/img/ghg/ThumbGHGWireframe3.jpg" itemprop="thumbnail" alt="Image description" />
+								        </a>
+								      </figure>
+								    </div>
+
+								</div>
+							</div>
+							<div class="ghg-grouping">
+								<div class="ghg-text">
+									<div class="ghg-content-divider">
+										
+									</div>
+									<div>
+										<p id="ghg-header">Mood Boards</p>
+										<div>
+											<p>Experimentation and exploration are necessary <br>in finding the style that best reflects the <br>qualities of the site.</p>
+										</div>
+									</div>
+								</div>
+								<div class="ghg-media-type-two">
+									<p class="ghg-link-title">PROJECT DECK</p>
+									<a class="ghg-link-button" href="#" title="Project Deck Mood Board">MOOD DIRECTIONS</a>
+								</div>
+								<div id="ghg-moodboard-images">
+									<!-- <div class="ghg-placeholder5">
+										
+									</div>
+									<div class="ghg-placeholder5">
+										
+									</div>
+									<div class="ghg-placeholder5">
+										
+									</div> -->
+
+									<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+								      <figure class="remove-margin" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								        <a href="media/img/ghg/GHGMoodboard1.png" itemprop="contentUrl" data-size="1728x2592">
+								          <img class="gallery-image-border" src="media/img/ghg/ThumbGHGMoodboard1.jpg" itemprop="thumbnail" alt="Basic black and white wireframe showing webpage design" />
+								        </a>
+								      </figure>
+								      
+								      <figure class="remove-margin" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								        <a href="media/img/ghg/GHGMoodboard2.jpg" itemprop="contentUrl" data-size="1728x2592">
+								          <img class="gallery-image-border" src="media/img/ghg/ThumbGHGMoodboard2.jpg" itemprop="thumbnail" alt="Image description" />
+								        </a>
+								      </figure>
+								      
+								      <figure class="remove-margin" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								        <a href="media/img/ghg/GHGMoodboard3.jpg" itemprop="contentUrl" data-size="1728x2592">
+								          <img class="gallery-image-border" src="media/img/ghg/ThumbGHGMoodboard3.jpg" itemprop="thumbnail" alt="Image description" />
+								        </a>
+								      </figure>
+								    </div>
+
+
+								</div>
+							</div>
+							<div class="ghg-grouping">
+								<div class="ghg-text">
+									<div class="ghg-content-divider">
+										
+									</div>
+									<div>
+										<p id="ghg-header">Final Design</p>
+										<div>
+											<p>The design process culminates into a singular, <br>cohesive design that embodies the goals set <br>after extensive research.</p>
+										</div>
+									</div>
+								</div>
+								<div class="ghg-media-type-two">
+									<p class="ghg-link-title">PROJECT DECK</p>
+									<a class="ghg-link-button" href="#" title="Project Deck Final Design">FINAL DIRECTION</a>
+								</div>
+								<div id="ghg-final-images">
+									<!-- <div class="ghg-placeholder5">
+										
+									</div>
+									<div class="ghg-placeholder5">
+										
+									</div>
+									<div class="ghg-placeholder5">
+										
+									</div>
+									<div class="ghg-placeholder6">
+										
+									</div>
+									<div class="ghg-placeholder6">
+										
+									</div> -->
+
+									<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+								      <figure class="remove-margin" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								        <a href="media/img/ghg/GHGFinal1.jpg" itemprop="contentUrl" data-size="1024x1259">
+								          <img class="gallery-image-border" src="media/img/ghg/ThumbGHGFinal1.jpg" itemprop="thumbnail" alt="Basic black and white wireframe showing webpage design" />
+								        </a>
+								      </figure>
+								      
+								      <figure class="remove-margin" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								        <a href="media/img/ghg/GHGFinal2.jpg" itemprop="contentUrl" data-size="1024x774">
+								          <img class="gallery-image-border" src="media/img/ghg/ThumbGHGFinal2.jpg" itemprop="thumbnail" alt="Basic black and white wireframe showing webpage design" />
+								        </a>
+								      </figure>
+								      <figure class="remove-margin" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								        <a href="media/img/ghg/GHGFinal3.jpg" itemprop="contentUrl" data-size="1024x1209">
+								          <img class="gallery-image-border" src="media/img/ghg/ThumbGHGFinal3.jpg" itemprop="thumbnail" alt="Basic black and white wireframe showing webpage design" />
+								        </a>
+								      </figure>
+								      <figure class="margin-top-final remove-margin" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								        <a href="media/img/ghg/GHGFinal4.jpg" itemprop="contentUrl" data-size="1024x3183">
+								          <img class="gallery-image-border" src="media/img/ghg/ThumbGHGFinal4.jpg" itemprop="thumbnail" alt="Basic black and white wireframe showing webpage design" />
+								        </a>
+								      </figure>
+								      <figure class="margin-top-final remove-margin" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								        <a href="media/img/ghg/GHGFinal5.jpg" itemprop="contentUrl" data-size="1024x3183">
+								          <img class="gallery-image-border" src="media/img/ghg/ThumbGHGFinal5.jpg" itemprop="thumbnail" alt="Basic black and white wireframe showing webpage design" />
+								        </a>
+								      </figure>
+								    </div>
+
+
+
+
+								</div>
+							</div>
+							<div id="ghg-deck-group" class="ghg-grouping">
+								<div class="ghg-media-type-two">
+									<p class="ghg-link-title">VIEW</p>
+									<a class="ghg-link-button" href="#" title="Full Project Deck">FULL PROJECT DECK</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="smart">
+				<div id="smart-section-one">
+					<img id="smart-logo" src="media/img/smart/smart-logo.png" alt="Smart Logo"/>
+				</div>
+				<div id="smart-section-two">
+					<img id="smart-wireframe" src="media/img/smart/smart-wireframe.jpg" alt="Smart iPad App Wireframe Design"/>
+				</div>
+				<div id="smart-section-three">
+					<div class="wrapper">						
+						<p id="smart-line" class="big-text"></p>
+						<p id="smart-description-text">is the development of a brand strategy and concept that impacts the visual design of SMART notebook.</p>
+						<div id="smart-content-container">
+							<div class="smart-grouping">
+								<div class="smart-text">
+									<div class="smart-content-divider">
+										
+									</div>
+									<div>
+										<p id="smart-header">Identifying<br>the Objective</p>
+										<div>
+											<p>The first step to creating a solution involved <br>understanding what SMART was looking <br>for in terms of a deliverable.</p>
+											<p>The most significant idea to recognize <br>was that in order to impact the visual <br>design approach for SMART/Notebook, <br>a comprehensive and detailed strategy <br>would be necessary that carefully <br>analyzed their current offerings.</p>
+										</div>
+									</div>
+								</div>
+								<div class=smart-media>
+									<img id="smart-1-objective-image" src="media/img/smart/smart-1-objective.png" alt="SMART Identifying the Objective Image"/>
+								</div>
+							</div>
+							<div class="smart-grouping reverse-grouping">
+								<div class="smart-text">
+									<div class="smart-content-divider">
+										
+									</div>
+									<div>
+										<p id="smart-header">Understanding<br>the Client</p>
+										<div>
+											<p>By analyzing their current products and <br>services, I could better understand the market <br>they cater to, as well as why people are so <br>passionate about their innovative technology.</p>
+											<p>The understanding of their current audience <br>and the audience they would like to attract <br>fuels the direction of my strategy in <br>looking to address the issue they face.</p>
+										</div>
+									</div>
+								</div>
+								<div class=smart-media>
+									<img id="smart-2-client-image" src="media/img/smart/smart-2-client.png" alt="SMART Understanding the Client Image"/>
+								</div>
+							</div>
+							<div class="smart-grouping">
+								<div class="smart-text">
+									<div class="smart-content-divider">
+										
+									</div>
+									<div>
+										<p id="smart-header">Determining<br>the Issue</p>
+										<div>
+											<p>With the understanding of the auidience SMART <br>wants to offer its products to, the issue that <br>needed to be addressed was that SMART's <br>technology was no currently being used <br>extensively in university settings.</p>
+											<p>By recognizing the problem SMART faces, it is <br>clear that their effectiveness and reach as a <br>company that prioritizes collaborative <br>learning tools, is stifled.</p>
+											<p>The question that arises is what can be <br>done to create an effective solution?</p>
+										</div>
+									</div>
+								</div>
+								<div class=smart-media>
+									<img id="smart-3-issue-image" src="media/img/smart/smart-3-issue.png" alt="SMART Determing the Issue Image"/>
+								</div>
+							</div>
+							<div class="smart-grouping reverse-grouping">
+								<div class="smart-text">
+									<div class="smart-content-divider">
+										
+									</div>
+									<div>
+										<p id="smart-header">Conducting<br>Research</p>
+										<div>
+											<p>In order to determine a comprehensive <br>solution, an important step was to perform <br>extensive research.</p>
+											<p>This included examining SMART's website <br>as well as the desktop and tablet apps for <br>the Notebook software in order to devise <br>the bet approach.</p>
+										</div>
+									</div>
+								</div>
+								<div class=smart-media>
+									<img id="smart-4-research-image" src="media/img/smart/smart-4-research.png" alt="SMART Conducting Research Image"/>
+								</div>
+							</div>
+							<div class="smart-grouping">
+								<div class="smart-text">
+									<div class="smart-content-divider">
+										
+									</div>
+									<div>
+										<p id="smart-header">Analyzing<br>the Website</p>
+										<div>
+											<p>In viewing the website, I found that it provided <br>no clear examples of the benefits given by <br>SMART's technology.</p>
+											<p>The main focus was a display of technical <br>specifications which does nothing to explain <br>why SMART products make a difference in the <br>learning experience</p>
+											<p>The site language was also extremely vague <br>and did not address how the technology can <br>be used to innovate.</p>
+										</div>
+									</div>
+								</div>
+								<div class=smart-media>
+									<img id="smart-5-website-image" src="media/img/smart/smart-5-website.png" alt="SMART Analyzing the Website Image"/>
+								</div>
+							</div>
+							<div class="smart-grouping reverse-grouping">
+								<div class="smart-text">
+									<div class="smart-content-divider">
+										
+									</div>
+									<div>
+										<p id="smart-header">Analyzing<br>Notebook</p>
+										<div>
+											<p>In using the notebook on the desktop and viewing <br>its tablet functionality, I found that it had a <br>bland tutorial that offered little in terms of a <br>meaningful explanation of functionality.</p>
+											<p>The iconography throughout the interface <br>lacked clarity in conveying purpose, and <br>certain functionality did not make sense when <br>applied to a university setting which only <br>detracted from the experience.</p>
+										</div>
+									</div>
+								</div>
+								<div class=smart-media>
+									<img id="smart-6-notebook-image" src="media/img/smart/smart-6-notebook.png" alt="SMART Analyzing Notebook Image"/>
+								</div>
+							</div>
+							<div class="smart-grouping">
+								<div class="smart-text">
+									<div class="smart-content-divider">
+										
+									</div>
+									<div>
+										<p id="smart-header">Analyzing<br>the Audience</p>
+										<div>
+											<p>I examined the user reviews for the notebook <br>app within the iOS app store as well as the <br>customer stories listed on the website.</p>
+											<p>From this research I gained a better <br>understanding of how people were using <br>SMART's technology and software, and what <br>functionality and features they would like to <br>have included in future updates.</p>
+										</div>
+									</div>
+								</div>
+								<div class=smart-media>
+									<img id="smart-7-audience-image" src="media/img/smart/smart-7-audience.png" alt="SMART Analyzing the Audience Image"/>
+								</div>
+							</div>
+							<div class="smart-grouping reverse-grouping">
+								<div class="smart-text">
+									<div class="smart-content-divider">
+										
+									</div>
+									<div>
+										<p id="smart-header">Determining<br>a Solution</p>
+										<div>
+											<p>After compiling and examining all of my <br>research, I decidd that the best strategy <br>would be to redesign the user experience for <br>the notebook app on the iPad.</p>
+											<p>The functionality here would be comprised of <br>features that were deemed to be most essential <br>with the goal of annotating and collaboration <br>in mind.</p>
+											<p>The excess features present in the desktop app <br>would be omitted in order to create an initial <br>experience that accentuates simplicity and <br>provides clarity in functionality.</p>
+										</div>
+									</div>
+								</div>
+								<div class=smart-media>
+									<img id="smart-8-solution-image" src="media/img/smart/smart-8-solution.png" alt="SMART Determining a Solution Image"/>
+								</div>
+							</div>
+							<div class="smart-grouping justify-content-left">
+								<div class="smart-text">
+									<div class="smart-content-divider">
+										
+									</div>
+									<div>
+										<p id="smart-header">Wireframing<br>the Concept</p>
+										<div class="smart-paragraphs">
+											<div>
+												<p>The initial page upon launching the app <br>would take users to a file repository where <br>they would have the ability to sign into <br>cloud storage services such as Google Drive <br>and Dropbox.</p>
+												
+											</div>
+											<div class="wireframe-right-paragraph">
+												<p>Aside from basic functionality such as search, <br>sorting, and favoriting capabilities, users <br>would also have access to Smart Exchange <br>where they can access lessons from other users <br>as well as upload their own.</p>
+												<p>The functionality here would be comprised of <br>features that were deemed to be most essential <br>with the goal of annotating and collaboration <br>in mind.</p>
+											</div>
+										</div>
+										<!-- <div class="wireframe-placeholder-1">
+											
+										</div> -->
+										<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+											<figure class="" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="media/img/smart/SmartWireframe1.jpg" itemprop="contentUrl" data-size="2048x1536">
+													<img class="gallery-image-border" src="media/img/smart/ThumbSmartWireframe1.jpg" itemprop="thumbnail" alt="Basic black and white wireframe showing webpage design" />
+												</a>
+											</figure>
+										</div>
+										<div class="smart-paragraphs">
+											<div>
+												<p>For the document editing and creation <br>experience, users have the ability to insert <br>photos, undo, and redo performed actions, <br>and a variety of primary tools such as pens, <br>brushes, shapes, and typography with the <br>ability to adjust their characteristics.</p>
+											</div>
+											<div class="wireframe-right-paragraph">
+												<p>Additionally, features from Bridgit <br>Conferencing software are implemented so <br>other users can join the annotating experience <br>to contribute to a collaborative environment.</p>
+											</div>
+										</div>
+										<!-- <div class="wireframe-placeholder-1">
+											
+										</div> -->
+										<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+											<figure class="" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="media/img/smart/SmartWireframe2.jpg" itemprop="contentUrl" data-size="2048x1536">
+													<img class="gallery-image-border" src="media/img/smart/ThumbSmartWireframe2.jpg" itemprop="thumbnail" alt="Basic black and white wireframe showing webpage design" />
+												</a>
+											</figure>
+										</div>
+										<div class="smart-paragraphs">
+											<div>
+												<p>Usrs can also add and delete slides with <br>hidden pane them to view all of the <br>slides that exist within a document.</p>
+											</div>
+										</div>
+										<!-- <div class="wireframe-placeholder-1">
+											
+										</div> -->
+										<div class="my-gallery" itemscope itemtype="http://schema.org/ImageGallery">
+											<figure class="" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="media/img/smart/SmartWireframe3.jpg" itemprop="contentUrl" data-size="2048x1536">
+													<img class="gallery-image-border" src="media/img/smart/ThumbSmartWireframe3.jpg" itemprop="thumbnail" alt="Basic black and white wireframe showing webpage design" />
+												</a>
+											</figure>
+										</div>
+										<div class="smart-paragraphs">
+											<div>
+												<p>After iterating and imporving the tablet <br>experience for the Notebook app, the next <br>priority would be to apply the lessons learned <br>from this approach, to a redesign of the <br>desktop Notebook experience as well <br>as the website.</p>
+											</div>
+											<div class="wireframe-right-paragraph">
+												<p>Clarity and simplicity would again be the <br>driving factors for the redesign.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="smart-strategy-link" class="smart-grouping">
+								<div>
+									<p class="smart-link-title">VIEW</p>
+									<a class="smart-link-button" href="#" title="Strategy Brief">STRATEGY BRIEF</a>
+								</div>
+							</div>
+						</div>
+			</section>
+			<section id="about-me">
+				<div>
+					<p id="about-me-label">ABOUT ME</p>
+					<p id="about-me-para-one">I am a creative developer striving to build and shape <br>experiences that enrich the lives of others through unique <br>solutions, inspiring inventiveness and motivating people <br>to approach challenges differently.
+					</p>
+					<p id="about-text-spacing" class="about-me-text">When I'm not staring at a screen to code and design, I enjoy staring at a  <br>screen to read through an ever-growing Kindle backlog, to playing through <br>narratively driven games, to watching the latest super hero themed <br>television shows. I love keeping an open ear to an endless variety of new <br>music supplied to me by Spotify, as well as listening to podcasts.</p>
+					<p class="about-me-text">Everything I consume and experience in life serves as inspiration for my <br>own creativity and helps me in my never-ending pursuit to better myself <br>both personally and professionally.</p>
 				</div>
 			</section>
 		</div>
+
+
+		<!-- #################### PHOTOSWIPE CODE ####################-->
+
+		<!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+      <!-- Background of PhotoSwipe.
+      It's a separate element, as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+        <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+          <div class="pswp__top-bar">
+            <!--  Controls are self-explanatory. Order can be changed. -->
+            <div class="pswp__counter"></div>
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            <button class="pswp__button pswp__button--share" title="Share"></button>
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+            <!-- element will get class pswp__preloader--active when preloader is running -->
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+          </button>
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+          </button>
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- <script  src="js/index.js"></script> -->
+	
 	</body>
 </html>
