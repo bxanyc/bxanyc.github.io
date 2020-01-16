@@ -755,7 +755,7 @@ div#scroll-arrow-parent > span.scroll-down-arrow {
   }
 }
 section#project-select {
-  height: 100vh;
+  height: 105vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
