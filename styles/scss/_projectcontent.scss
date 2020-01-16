@@ -14,6 +14,11 @@
 
 section#project-select {
 	// position:relative;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 //move later to base.scss
@@ -29,7 +34,7 @@ section#project-select > div.wrapper > p.big-text {
 	// margin-bottom: 12.4rem;
 	padding: 0;
 	// margin-top: 6.9rem;
-	margin-top: 5vh;
+	// margin-top: 5vh;
 	color: $codeBGColor;
 }
 
