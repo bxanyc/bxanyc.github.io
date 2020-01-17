@@ -482,7 +482,8 @@ nav {
   font-family: 'Source Sans Pro', sans-serif;
   position: fixed;
   top: 0;
-  z-index: 5;
+  z-index: 10;
+  height: 7.8rem;
 }
 
 div#logo-container {
@@ -503,6 +504,7 @@ div#logo-container {
 }
 
 div#nav-links {
+  position: relative;
   background-color: #ffffff;
   width: 35.7rem;
   height: 7.8rem;
@@ -599,6 +601,40 @@ div#nav-links > ul > li:hover > a {
 
 div#nav-links > ul > li:hover > a > span.arrow-down {
   border-top: 0.5rem solid #2ceda0;
+}
+
+div.scroll-progress {
+  height: .3rem;
+  background-color: #2ceda0;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: width 0s ease;
+  z-index: 10;
+}
+
+div#nav-background {
+  height: 7.8rem;
+  background-color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  transform: translateY(-40%);
+  transition: opacity .5s ease, transform .4s ease;
+}
+
+#nav-logo-link {
+  z-index: 5;
+  position: relative;
+}
+
+.fade-Navigation-Background {
+  opacity: 1 !important;
+  transform: translateY(0%) !important;
 }
 
 /************************** Header Content Styling ***************************/

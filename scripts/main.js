@@ -74,6 +74,8 @@ function windowScrollTriggers() {
 	$(window).on("scroll", function() {
 		// console.log("scrollTop(): " + $(window).scrollTop());
 		shrinkLogo();
+		fadeNavBackground();
+		animateScrollProgressBar();
 	});
 }
 
@@ -83,6 +85,21 @@ function shrinkLogo() {
 	// 	console.log("Greater than 100");
 	// }
 	$("div#logo-container").toggleClass("shrinkLogo", $(window).scrollTop() > 100);
+}
+
+//when the scrollbar is greater than 100px, fade the white navigation background
+function fadeNavBackground() {
+	$("div#nav-background").toggleClass("fade-Navigation-Background", $(window).scrollTop() > 100);
+}
+
+//animate scroll bar
+function animateScrollProgressBar() {
+
+  $scrollProgress = $("div.scroll-progress");
+  var progressWidth = ($(document).scrollTop() / ($(document).height() - $(window).height())) * 100;
+  progressWidth = progressWidth + "%";
+  console.log(progressWidth);
+  $("div.scroll-progress").css("width", progressWidth);
 }
 
 function typingText() {
