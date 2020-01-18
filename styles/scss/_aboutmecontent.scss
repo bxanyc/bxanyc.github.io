@@ -22,7 +22,7 @@ section#about-me > div > p#about-me-para-one {
 	margin-bottom: 4rem;
 }
 
-section#about-me > div > p.about-me-text {
+section#about-me > div > p.about-me-text, section#about-me > div > p#contact-details {
 	color: #bfb8b8;
 	@include bodyText(1.4rem, 2.5rem);
 }
@@ -30,3 +30,16 @@ section#about-me > div > p.about-me-text {
 section#about-me > div > p#about-text-spacing {
 	margin-bottom: 2.5rem;
 }
+
+section#about-me > div > p#contact {
+	color: #ffffff;
+	@include bodyText(1.2rem, 1.5rem);
+	margin-top: 5rem;
+	width: 53.489rem;
+}
+
+.blue-text {
+	color: #5fd9f2;
+}
+
+

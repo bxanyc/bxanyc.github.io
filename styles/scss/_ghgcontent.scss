@@ -154,7 +154,14 @@ div#ghg-wireframe-images figure.remove-margin, div#ghg-moodboard-images figure.r
 
 //border to indicate an image opens into gallery
 img.gallery-image-border {
-	// border: 2.6px solid $ghgColor;
+	border: .1rem solid black;
+	transform: scale(1,1);
+	transition: transform .35s ease;
+}
+
+//shrink gallery images when hovered over
+figure.gallery-scale:hover img.gallery-image-border {
+	transform: scale(.95, .95);
 }
 
 //allows full width of gallery container to be used

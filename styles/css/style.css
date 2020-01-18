@@ -532,7 +532,7 @@ div#nav-links > ul > li#dropdown-parent > ul#dropdown-items {
   padding: 0;
   background-color: #fff;
   width: 35.7rem;
-  right: 3rem;
+  left: 0rem;
   height: 21.6rem;
   top: 7.8rem;
   font-size: 3rem;
@@ -963,10 +963,9 @@ section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-con
 }
 
 section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.placeholder3 {
-  width: 96rem;
-  height: 54rem;
-  background-color: grey;
+  text-align: center;
   margin-bottom: 12rem;
+  margin-top: 5rem;
 }
 
 section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-view, section#ripple > div#ripple-section-three > div.wrapper > div#ripple-content-container > div.ripple-grouping > div.ripple-download {
@@ -1203,6 +1202,16 @@ div#ghg-wireframe-images figure.remove-margin, div#ghg-moodboard-images figure.r
   margin: 0;
 }
 
+img.gallery-image-border {
+  border: .1rem solid black;
+  transform: scale(1, 1);
+  transition: transform .35s ease;
+}
+
+figure.gallery-scale:hover img.gallery-image-border {
+  transform: scale(0.95, 0.95);
+}
+
 div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-wireframe-images, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-moodboard-images, div#ghg-section-two > div.wrapper > div#ghg-content-container > div.ghg-grouping > div#ghg-final-images {
   width: 100%;
 }
@@ -1404,7 +1413,7 @@ section#about-me > div > p#about-me-para-one {
   margin-bottom: 4rem;
 }
 
-section#about-me > div > p.about-me-text {
+section#about-me > div > p.about-me-text, section#about-me > div > p#contact-details {
   color: #bfb8b8;
   font-family: 'Source Sans Pro Regular', sans-serif;
   font-size: 1.4rem;
@@ -1414,6 +1423,20 @@ section#about-me > div > p.about-me-text {
 
 section#about-me > div > p#about-text-spacing {
   margin-bottom: 2.5rem;
+}
+
+section#about-me > div > p#contact {
+  color: #ffffff;
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1em;
+  margin-top: 5rem;
+  width: 53.489rem;
+}
+
+.blue-text {
+  color: #5fd9f2;
 }
 
 /*# sourceMappingURL=style.css.map */
