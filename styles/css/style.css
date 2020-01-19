@@ -1439,4 +1439,16 @@ section#about-me > div > p#contact {
   color: #5fd9f2;
 }
 
+footer#align-copyright {
+  text-align: center;
+}
+
+footer p#footer-text {
+  color: #191D24;
+  font-family: 'Source Sans Pro Regular', sans-serif;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  letter-spacing: 0.1em;
+}
+
 /*# sourceMappingURL=style.css.map */
